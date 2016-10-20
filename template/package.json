@@ -1,0 +1,45 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "<%= description %>",
+  "private": <%= private %>,
+  "main": "app.js",
+  "scripts": {
+    "start": "node bin/run",
+    "doc": "apidoc -i ./src/ -o ./doc/"
+  },
+  "keywords": "",
+  "precommit": "test",
+  <% if (github) { %>
+  "repository": {
+    "type": "git",
+    "url": "git+<%= github %>.git"
+  },
+  "homepage": "<%= github %>#readme",
+  "bugs": {
+    "url": "<%= github %>/issues"
+  },<% } %><% if (author) { %>
+  "author": "<%= author %>",<% } %>
+  "license": "<%= license %>",
+  "dependencies": {
+    "config": "^1.21.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-router": "^7.0.0",
+    "koa-log4": "^2.0.2",
+    "mongoose": "^4.6.4",
+    "promise": "^7.1.1",
+    "runkoa": "^1.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^2.4.5",
+    "mochawesome": "^1.5.3",
+    "pre-commit": "^1.1.3",
+    "should": "^8.3.2",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^4.0.0"
+  }
+}

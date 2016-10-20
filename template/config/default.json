@@ -1,0 +1,12 @@
+{
+  "name": "<%= name %>",
+  "port": "<%= port %>",
+  "mongo": {
+    "host": "127.0.0.1",
+    "db": "<%= name %>",
+    "port": 27017,
+    "user": "",
+    "pwd": "",
+    "authSource": ""
+  }
+}

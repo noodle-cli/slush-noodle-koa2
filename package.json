@@ -1,0 +1,31 @@
+{
+  "name": "slush-noodle-koa",
+  "version": "0.0.1",
+  "description": "A koa1 project template for noodle.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noodle-cli/slush-noodle-koa.git"
+  },
+  "scripts": {},
+  "keywords": [
+    "noodle",
+    "koa",
+    "mongoose",
+    "slushgenerator"
+  ],
+  "author": "huijian.lu <luhuijian2013@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noodle-cli/slush-noodle-koa.git/issues"
+  },
+  "homepage": "https://github.com/noodle-cli/slush-noodle-koa.git#readme",
+  "dependencies": {
+    "gulp": "~3.8.6",
+    "gulp-template": "~0.1.1",
+    "gulp-rename": "~1.2.0",
+    "gulp-install": "~0.2.0",
+    "gulp-conflict": "~0.2.0",
+    "inquirer": "~0.5.1"
+  }
+}
