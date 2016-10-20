@@ -1,2 +1,2 @@
-# slush-noodle-express
-> A express project template for noodle.
+# slush-noodle-koa2
+> A koa2 project template for noodle.
