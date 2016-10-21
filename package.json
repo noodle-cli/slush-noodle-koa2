@@ -1,6 +1,6 @@
 {
   "name": "slush-noodle-koa2",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A koa2 project template for noodle.",
   "main": "index.js",
   "repository": {

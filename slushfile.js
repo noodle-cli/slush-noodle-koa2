@@ -1,3 +1,4 @@
+
 var gulp = require('gulp')
 var install = require('gulp-install')
 var conflict = require('gulp-conflict')
@@ -20,15 +21,15 @@ gulp.task('default', function (done) {
       default: 'a node api server project.'
     },
     {
-      type: 'confirm',
-      name: 'private',
-      message: 'Private?',
-      default: true
+      type: 'input',
+      name: 'version',
+      message: 'Give your app version',
+      default: '0.0.1'
     },
     {
       type: 'confirm',
-      name: 'unit',
-      message: 'Setup unit tests with Mocha, chai, supertest?',
+      name: 'private',
+      message: 'Private?',
       default: true
     },
     {
