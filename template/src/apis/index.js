@@ -2,7 +2,7 @@
 
 const router = require('koa-router')();
 
-const postController = require('./v1/post');
+const postController = require('./post');
 
 router
   .get('/v1/posts', postController.fetch)
