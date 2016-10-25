@@ -1,0 +1,39 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "private": <%= private %>,
+  "main": "--harmony-async-await src/app.js",
+  "keywords": "",
+  "scripts": {
+    "start": "node --harmony-async-await src/app.js"
+  },
+  <% if (github) { %>
+  "repository": {
+    "type": "git",
+    "url": "git+<%= github %>.git"
+  },
+  "homepage": "<%= github %>#readme",
+  "bugs": {
+    "url": "<%= github %>/issues"
+  },<% } %><% if (author) { %>
+  "author": "<%= author %>",<% } %>
+  "license": "<%= license %>",
+  "dependencies": {
+    "config": "^1.21.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-router": "^7.0.0",
+    "koa-log4": "^2.0.2",
+    "mongoose": "^4.6.4",
+    "promise": "^7.1.1",
+    "runkoa": "^1.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "should": "^8.3.2",
+    "supertest": "^2.0.0",
+    "supertest-as-promised": "^4.0.0"
+  }
+}

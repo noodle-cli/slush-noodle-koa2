@@ -1,8 +1,8 @@
 {
   "name": "slush-noodle-koa2",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "A koa2 project template for noodle.",
-  "main": "index.js",
+  "main": "slushfile.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/noodle-cli/slush-noodle-koa2.git"

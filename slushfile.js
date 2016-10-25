@@ -9,6 +9,12 @@ var inquirer = require('inquirer')
 gulp.task('default', function (done) {
   inquirer.prompt([
     {
+      type: 'confirm',
+      name: 'v7',
+      message: 'Are you using node v7?',
+      default: false
+    },
+    {
       type: 'input',
       name: 'name',
       message: 'Give your app a name',
@@ -71,7 +77,9 @@ gulp.task('default', function (done) {
       return done()
     }
 
-    var filesPath = __dirname + '/template/**'
+
+    var filesPath = __dirname + '/template/babel/**';
+    if(answers.v7) filesPath = __dirname + '/template/v7/**';
 
     gulp.src(filesPath, { dot: true })
       .pipe(template(answers))
